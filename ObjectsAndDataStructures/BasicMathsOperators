@@ -11,3 +11,13 @@ print(2*3)
 print(4/2)
 print(2**3)
 print(5%2)
+
+# type(variable_name) can be used to check the type of variable
+# we can assign any value to a variable in python
+
+a = 10;
+print(type(a))
+a = "String"
+print(type(a))
+a = 100.9
+print(type(a))
