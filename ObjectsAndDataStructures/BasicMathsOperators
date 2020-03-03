@@ -1,0 +1,13 @@
+# / : divide Operator
+# + : addition
+# - : subtraction
+# * : multiply
+# ** : power (a ** b - a to the power of b)
+# % : modulus
+
+print(1+2)
+print(2-1)
+print(2*3)
+print(4/2)
+print(2**3)
+print(5%2)
