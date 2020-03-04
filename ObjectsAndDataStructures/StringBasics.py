@@ -69,3 +69,10 @@ print("Hello {nick}. Welcome to the party!".format(nick="Jitu",full="Jitender"))
 print("Hello {} and {}. Welcome to the party!".format("Jitu","Jitender")) # multiple usage in natural order
 print("Hello {full} and {nick}. Welcome to the party!".format(nick="Jitu",full="Jitender")) # multiple usage in specific order
 print("Hello {1} and {1}. Welcome to the party!".format("Jitu","Jitender")) # multiple usage using indexes
+
+# f-string or formatted string literals. introduced in python 3.6
+# instead of using .format() we can directly pass the name of the variable inside the string
+name = "Jitender"
+print(f"Welcome to python, {name}") # can also be used with multiple varaibles
+age = 25
+print(f"{name} your age is {age}. You are not allowed here!")
