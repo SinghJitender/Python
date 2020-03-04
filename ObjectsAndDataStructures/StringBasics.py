@@ -50,3 +50,12 @@ print(two)
 z = "Z";
 z = z * 10;
 print(z) # prints 'z' 10 times. In other words it concatenated  10 times to itself
+
+# using stringName.+space you can get all inbuild string methods in python
+# Popular string functions are upper(), lower(), split()..
+
+inBuildMethods = "Hi, I'm trying to learn strings in python"
+print(inBuildMethods.upper())
+print(inBuildMethods.lower())
+print(inBuildMethods.split(" "))
+print(inBuildMethods.split("r"))
