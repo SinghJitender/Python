@@ -36,3 +36,6 @@ dictionary = {'key1':130.30, 'key2':[10,20,30], "key3":{'insideKey':200}}
 print(dictionary)
 print(dictionary['key2'])
 print(dictionary['key3']['insideKey'])
+
+dictionary['key4'] = 6969.69 # adding new key to dictionary
+print(dictionary)
