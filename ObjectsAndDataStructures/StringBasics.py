@@ -59,3 +59,13 @@ print(inBuildMethods.upper())
 print(inBuildMethods.lower())
 print(inBuildMethods.split(" "))
 print(inBuildMethods.split("r"))
+
+# .format() methods is widely used with strings to represent variety of things
+
+print("Hello {}. Welcome to the party!".format("Jitu")) # Replaces {} with Jitu
+print("Hello {}. Welcome to the party!".format("Jitu","Jitender")) # Replaces {} with Jitu, Since it occured first and no index is specified in the {}
+print("Hello {1}. Welcome to the party!".format("Jitu","Jitender")) # now get the value at index 1 i.e Jitender and put it in {}
+print("Hello {nick}. Welcome to the party!".format(nick="Jitu",full="Jitender")) # can also assign values to the object and then pass the value in {}
+print("Hello {} and {}. Welcome to the party!".format("Jitu","Jitender")) # multiple usage in natural order
+print("Hello {full} and {nick}. Welcome to the party!".format(nick="Jitu",full="Jitender")) # multiple usage in specific order
+print("Hello {1} and {1}. Welcome to the party!".format("Jitu","Jitender")) # multiple usage using indexes
