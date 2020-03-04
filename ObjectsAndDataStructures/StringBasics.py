@@ -4,3 +4,7 @@ a = 'Hello World'
 b = "Hello World"
 
 print(a+" "+b)
+
+# len() function to find length of string
+a = len(b)
+print(a)
