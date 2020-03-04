@@ -46,4 +46,7 @@ one = "One"
 two = "TW"+one[:1]
 print(two)
 
-
+# Multiply Operator (*) can be used to get 'x' times of a string
+z = "Z";
+z = z * 10;
+print(z) # prints 'z' 10 times. In other words it concatenated  10 times to itself
