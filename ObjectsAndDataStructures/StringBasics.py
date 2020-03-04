@@ -38,3 +38,12 @@ print(thirdString[2::3]) # start with index 2 uptill end and print every 3rd cha
 print(thirdString[:7:4]) # start with 0 and end at 7. prints every 4th character
 print(thirdString[2:5:2]) # start at 2 end at 5 and prints every 2nd character
 print(thirdString[::-1]) # trick to reverse the string
+
+# Operations on string
+
+# concatenation using +
+one = "One"
+two = "TW"+one[:1]
+print(two)
+
+
