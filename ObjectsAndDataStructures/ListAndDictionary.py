@@ -24,3 +24,15 @@ item1 = list.pop() # removes last element
 item2 = list.pop(0) # remove element with the index provided. By default its -1;
 print(f"{item1} and {item2}")
 print(list)
+
+x = None # Null as in Java
+
+# Dictionaries are just like Hashtables
+dictionary = {'key1':100, 'key2':200, 'key3':300}
+print(dictionary)
+print(dictionary['key2']) # prints value of key 2;
+
+dictionary = {'key1':130.30, 'key2':[10,20,30], "key3":{'insideKey':200}}
+print(dictionary)
+print(dictionary['key2'])
+print(dictionary['key3']['insideKey'])
