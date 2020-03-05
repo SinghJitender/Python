@@ -39,3 +39,6 @@ print(dictionary['key3']['insideKey'])
 
 dictionary['key4'] = 6969.69 # adding new key to dictionary
 print(dictionary)
+
+print(dictionary.values())
+print(dictionary.keys())
