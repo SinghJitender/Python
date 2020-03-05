@@ -42,3 +42,4 @@ print(dictionary)
 
 print(dictionary.values())
 print(dictionary.keys())
+print(dictionary.items()) # returns tuple
