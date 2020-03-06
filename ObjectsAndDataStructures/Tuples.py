@@ -10,3 +10,9 @@ print(tup2)
 
 # tuples cannot be reassigned with any value like in list
 # Example - tup2[0] = "1" will give an error
+
+# tuples have 2 methods - count and index
+print(tup2.count('One')) # count total occurences of given element in tuple
+print(tup2.index('One')) # return index of first occurence of given element in tuple
+
+
