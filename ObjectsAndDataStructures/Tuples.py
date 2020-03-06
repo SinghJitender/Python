@@ -15,4 +15,7 @@ print(tup2)
 print(tup2.count('One')) # count total occurences of given element in tuple
 print(tup2.index('One')) # return index of first occurence of given element in tuple
 
-
+# as in the case of strings, we can use indexing and slicing in tuples as well
+print(tup[1:])
+print(tup[0])
+print(tup[-1])
