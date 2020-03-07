@@ -23,3 +23,6 @@ print(contents)
 with open('test','w') as myfile:
     myfile.write(contents + "This file is overwritten.")
 
+with open('test','a') as myfile:
+    myfile.write(contents + "Contents now are appended.")
+
