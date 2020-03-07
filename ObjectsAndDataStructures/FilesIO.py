@@ -3,3 +3,5 @@ file = open('test')
 print(file.read())
 file.seek(0) # reset the cursor to Zero i.e. start of file.
 print(file.read())
+file.seek(0)
+print(file.readlines()) # returnes list of elements.
