@@ -47,6 +47,14 @@ print(list)
 from random import randint
 print(randint(10,30)) # returns random number between 10 and 30
 
+# Taking input in python - Input is always stored as a string
+x = input("Enter a number here : ")
+print(x)
+print(type(x))
+# to convert the input to desired type use
+print(float(x))
+print(int(x))
+
 
 
 
