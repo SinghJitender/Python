@@ -15,3 +15,15 @@ for item in enumerate(word):
 
 for index,item in enumerate(word):
     print(f"{index} : {item}")
+
+# zip() zips together two lists and returns a tuple. Every item is zipped to other items in other list at corresponding index
+list1 = [1,2,3]
+list2= ["a","b","c","d"]
+result = zip(list1,list2)
+for item in result:
+    print(item)
+
+# to get the zip() output as a list
+list3 = list(zip(list1,list2))
+print(list3)
+
