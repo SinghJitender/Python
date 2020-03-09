@@ -28,11 +28,25 @@ list3 = list(zip(list1,list2))
 print(list3)
 
 # in operator can be used to check if items is there in a list - returns a  boolean
-
 print('a' in ' word')
 print(1 in [2,3,4,5,1])
 print(345 in {'mkey':345}.keys())
 print(345 in {'mkey':345}.values())
+
+# min, max , random
+list = range(10,100,10)
+print(min(list))
+print(max(list))
+
+# random is a library to use its functions we need to import the library
+list = [1,2,3,4,5,6,7,8,9]
+from random import shuffle
+shuffle(list)
+print(list)
+
+from random import randint
+print(randint(10,30)) # returns random number between 10 and 30
+
 
 
 
