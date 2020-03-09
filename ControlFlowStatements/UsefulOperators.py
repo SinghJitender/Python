@@ -27,3 +27,12 @@ for item in result:
 list3 = list(zip(list1,list2))
 print(list3)
 
+# in operator can be used to check if items is there in a list - returns a  boolean
+
+print('a' in ' word')
+print(1 in [2,3,4,5,1])
+print(345 in {'mkey':345}.keys())
+print(345 in {'mkey':345}.values())
+
+
+
