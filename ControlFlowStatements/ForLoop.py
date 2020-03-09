@@ -15,3 +15,11 @@ for tuple in list:
 for a,b in list:
     print(a)
     print(b)
+
+d={'k1':1,'k2':2,'k3':3}
+for item in d:
+    print(item)
+for item in d.items():
+    print(item)
+for key,value in d.items():
+    print(f"{key}:{value}")
