@@ -18,3 +18,15 @@ def default_value(value = 10):
 
 default_value() # Since no value is provided. default value will be printed
 default_value(20)
+
+# functions can also be provided with documentation elcosed in ''' .... '''
+
+def documentation():
+    '''
+    This is a demonstration to show 'How to add function documentation'
+    Here we can write about inputs, output and functioning or usage of the function like :
+    :return: nothing
+    '''
+    print("You can type help(funtion_name) to read the documentation i.e. help(documentation) ")
+
+help(documentation)
