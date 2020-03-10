@@ -49,3 +49,19 @@ def pig_latin(word):
 
 print(pig_latin("apple"))
 print(pig_latin("word"))
+
+# To make a function takes in multiple agruments/parameters we can use '*args' or '*kwargs'
+# *args - stands for positional arguments. This is accepted as a tuple. we can use any name like '*name' for this.
+# *kwargs - stands for keyword arguments. This is accepted as a dictionary. we can use any name here as well.
+# Both of them can also be used together provided we pass the arugment in specific order.
+
+def sumAll(*args):
+    import builtins
+    print(builtins.sum(args))
+
+def keyValue(**kwargs):
+    print(kwargs)
+    print(kwargs["name"])
+
+sumAll(10,20,30,40,50)
+keyValue(name="Jitender", age=24)
