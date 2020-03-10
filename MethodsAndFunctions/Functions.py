@@ -63,5 +63,11 @@ def keyValue(**kwargs):
     print(kwargs)
     print(kwargs["name"])
 
+def both(*args,**kwargs):
+    print(args)
+    print(kwargs)
+
 sumAll(10,20,30,40,50)
 keyValue(name="Jitender", age=24)
+both(10,20,30,40,50,name="Jitender", age=24)
+
