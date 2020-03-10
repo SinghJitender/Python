@@ -38,3 +38,14 @@ def add(a=0,b=0):
 
 sum = add(10,20)
 print(sum)
+
+
+def pig_latin(word):
+    if word[0] in "aeiou":
+        result = word+"ay"
+    else:
+        result = word[1:]+word[0]+"ay"
+    return result
+
+print(pig_latin("apple"))
+print(pig_latin("word"))
