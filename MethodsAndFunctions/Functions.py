@@ -30,3 +30,11 @@ def documentation():
     print("You can type help(funtion_name) to read the documentation i.e. help(documentation) ")
 
 help(documentation)
+
+# 'return' keyword can be used to return a value from a function
+
+def add(a=0,b=0):
+    return a+b
+
+sum = add(10,20)
+print(sum)
