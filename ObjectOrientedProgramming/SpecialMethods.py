@@ -13,6 +13,9 @@ class Book():
     def __len__(self):
         return self.pages
 
+    def __del__(self):
+        print(f"Book '{self.book}' has been deleted")
+
 book1  = Book("Jitender","Python Advance to Null",200)
 # __str__ method being called automatically
 print(book1)
