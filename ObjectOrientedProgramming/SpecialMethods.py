@@ -10,9 +10,16 @@ class Book():
     def __str__(self):
         return f"{self.author} by {self.book}"
 
+    def __len__(self):
+        return self.pages
+
 book1  = Book("Jitender","Python Advance to Null",200)
 # __str__ method being called automatically
 print(book1)
+print(len(book1))
+
+# To delete the variable from memory use 'del variable_name'
+del book1
 
 
 
