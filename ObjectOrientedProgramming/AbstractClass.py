@@ -10,20 +10,19 @@ class Animal:
         raise NotImplementedError("Must be implemented in base class")
 
 class Dog(Animal):
-    def __init__(self,name):
-        Animal.__init__(self.name)
-        self.name = name
-
     def speak(self):
         print("WOOF!")
 
 
 class Cat(Animal):
-    def __init__(self, name):
-        Animal.__init__(self.name)
-        self.name = name
-
     def speak(self):
         print("MEOW!")
 
+dog = Dog("Vodafone")
+cat = Cat("Badass")
 
+print(type(dog))
+print(type(cat))
+
+for obj in [dog,cat]:
+    obj.speak();
