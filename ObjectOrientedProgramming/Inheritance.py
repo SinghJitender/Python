@@ -22,3 +22,11 @@ class Dog(Animal):
     # Method Overriding
     def who_am_i(self):
         print("I'm a Dog.")
+
+dog_obj = Dog()
+# Dog's class own method
+dog_obj.brak()
+# Overridden method from animal class
+dog_obj.who_am_i()
+# Animal class method
+dog_obj.eat()
