@@ -57,3 +57,14 @@ except:
     print("Exception Occured : ")
 finally:
     print("This is finally block. It will be executed no matter what")
+
+# Example 6 - Finally with else-block
+try:
+    result = divide(4,8)
+    print("Result is {}".format(result))
+except:
+    print("Exception Occured : ")
+else:
+    print("This is else block")
+finally:
+    print("This is finally block. It will be executed no matter what")
