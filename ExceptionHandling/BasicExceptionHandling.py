@@ -48,3 +48,12 @@ except:
     print("Exception Occured : ")
 finally:
     print("This is finally block. It will be executed no matter what")
+
+# Example 5 - Exception thrown
+try:
+    result = divide(4,0)
+    print("Result is {}".format(result))
+except:
+    print("Exception Occured : ")
+finally:
+    print("This is finally block. It will be executed no matter what")
