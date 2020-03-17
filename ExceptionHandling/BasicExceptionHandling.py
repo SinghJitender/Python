@@ -39,3 +39,12 @@ except:
     print("Error Occured.")
 
 # If something else needs to be executed after the except block then 'finally block should be used.
+
+# Example 4 - Exception not thrown
+try:
+    result = divide(0,1)
+    print("Result is {}".format(result))
+except:
+    print("Exception Occured : ")
+finally:
+    print("This is finally block. It will be executed no matter what")
