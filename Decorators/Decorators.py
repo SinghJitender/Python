@@ -17,3 +17,21 @@ def func1():
     print("End of function 1")
 
 func1()
+
+def func4(value = 1):
+    print("Inside function 4")
+    def func5():
+        return "Inside function 5"
+    def func6():
+        return "Inside function 6"
+    print("End of function 4")
+    if value == 1:
+        return func5()
+    else:
+        return func6()
+
+test = func4
+
+print(f"Result : {test()}")
+
+
