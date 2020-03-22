@@ -34,4 +34,6 @@ test = func4
 
 print(f"Result : {test()}")
 
+# Decorators :
+
 
