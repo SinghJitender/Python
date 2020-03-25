@@ -10,3 +10,13 @@ class className:
 
 #end of class
 
+class animal:
+
+    def __init__(self,breed):
+        self.breed = breed
+
+    def printBreed(self):
+        print(self.breed)
+
+dog = animal("Lab")
+dog.printBreed()
