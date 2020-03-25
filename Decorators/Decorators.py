@@ -32,6 +32,8 @@ def func4(value = 1):
 
 test = func4
 
+print(test)
+
 print(f"Result : {test()}")
 
 # Decorators :
