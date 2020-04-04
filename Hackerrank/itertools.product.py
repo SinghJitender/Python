@@ -59,6 +59,7 @@ Sample Output
 '''
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
+
 a = list(map(int, list(input().split(" "))))
 b = list(map(int,list(input().split(" "))))
 from itertools import product
