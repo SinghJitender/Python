@@ -78,7 +78,6 @@ CANDY: Quantity bought: , Price:
 Net Price:
 '''
 
- # Enter your code here. Read input from STDIN. Print output to STDOUT
 from collections import OrderedDict
 ordinary_dictionary = OrderedDict()
 n = int(input())
