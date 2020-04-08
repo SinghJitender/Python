@@ -50,4 +50,33 @@ deque(['6', '9', '8', '7', '3'])
 >>> d.rotate(3)
 >>> print d
 deque(['8', '7', '3', '6', '9'])
+
+Task
+
+Perform append, pop, popleft and appendleft methods on an empty deque .
+
+Input Format
+
+The first line contains an integer , the number of operations.
+The next  lines contains the space separated names of methods and their values.
+
+Constraints
+
+
+Output Format
+
+Print the space separated elements of deque .
+
+Sample Input
+
+6
+append 1
+append 2
+append 3
+appendleft 4
+pop
+popleft
+Sample Output
+
+1 2
 '''
