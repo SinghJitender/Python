@@ -79,4 +79,19 @@ popleft
 Sample Output
 
 1 2
+
 '''
+
+from collections import deque
+d = deque()
+for _ in range(0,(int(input()))) :
+    val = input().split()
+    if val[0] == "append" :
+        d.append(int(val[1]))
+    elif val[0] == "pop" :
+        d.pop()
+    elif val[0] == "popleft" :
+        d.popleft()
+    elif val[0] == "appendleft" :
+        d.appendleft(int(val[1]))
+print(*d)
