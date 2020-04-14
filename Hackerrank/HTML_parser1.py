@@ -123,3 +123,24 @@ End   : body
 End   : html
 '''
 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from html.parser import HTMLParser
+import sys
+class MyHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        print(f"Start : {tag}")
+        if(len(attrs)!=0):
+            for atr in attrs:
+                print(f"-> {atr[0]} > {atr[1]}")
+    def handle_endtag(self, tag):
+        print(f"End   : {tag}")
+    def handle_startendtag(self, tag, attrs):
+        print(f"Empty : {tag}")
+        for ele in attrs:
+            print ('->',ele[0],'>',ele[1])
+
+n = int(input())
+parser = MyHTMLParser()
+parser.feed("".join(sys.stdin.readlines()))
+
+# instantiate the parser and fed it some HTML
