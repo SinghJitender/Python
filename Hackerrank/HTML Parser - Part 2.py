@@ -88,7 +88,6 @@ class MyHTMLParser(HTMLParser):
             print(">>> Single-line Comment ")
         print(data)
 
-
 html = ""
 for i in range(int(input())):
     html += input().rstrip()
