@@ -94,5 +94,4 @@ for _ in range(0,(int(input()))) :
         d.popleft()
     elif val[0] == "appendleft" :
         d.appendleft(int(val[1]))
-
 print(*d)
