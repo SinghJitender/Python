@@ -71,3 +71,23 @@ object tag: Print the object tag. In the next  lines, print the attributes type,
 
 param tag: Print the param tag. In the next  lines, print the attributes name along with                     their respective values.
 '''
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from html.parser import HTMLParser
+import sys
+class MyHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        print(f"{tag}")
+        if(len(attrs)!=0):
+            for atr in attrs:
+                print(f"-> {atr[0]} > {atr[1]}")
+   # def handle_endtag(self, tag):
+   #     print(f"End   : {tag}")
+    def handle_startendtag(self, tag, attrs):
+        print(f"{tag}")
+        for ele in attrs:
+            print ('->',ele[0],'>',ele[1])
+
+n = int(input())
+parser = MyHTMLParser()
+parser.feed("".join(sys.stdin.readlines()))
