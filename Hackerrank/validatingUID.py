@@ -11,7 +11,6 @@ It should only contain alphanumeric characters ( - ,  -  &  - ).
 No character should repeat.
 There must be exactly  characters in a valid UID.
 Input Format
-
 The first line contains an integer , the number of test cases.
 The next  lines contains an employee's UID.
 
