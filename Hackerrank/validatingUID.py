@@ -18,7 +18,6 @@ Output Format
 For each test case, print 'Valid' if the UID is valid. Otherwise, print 'Invalid', on separate lines. Do not print the quotation marks.
 
 Sample Input
-
 2
 B1CD102354
 B1CDEF2354
