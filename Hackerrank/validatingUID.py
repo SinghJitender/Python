@@ -15,7 +15,6 @@ The first line contains an integer , the number of test cases.
 The next  lines contains an employee's UID.
 
 Output Format
-
 For each test case, print 'Valid' if the UID is valid. Otherwise, print 'Invalid', on separate lines. Do not print the quotation marks.
 
 Sample Input
