@@ -21,6 +21,7 @@ Sample Input
 2
 B1CD102354
 B1CDEF2354
+
 Sample Output
 
 Invalid
