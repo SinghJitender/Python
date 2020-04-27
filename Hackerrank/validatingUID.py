@@ -23,7 +23,6 @@ B1CD102354
 B1CDEF2354
 
 Sample Output
-
 Invalid
 Valid
 Explanation
