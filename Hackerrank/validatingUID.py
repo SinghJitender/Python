@@ -3,7 +3,6 @@ ABCXYZ company has up to  employees.
 The company decides to create a unique identification number (UID) for each of its employees.
 The company has assigned you the task of validating all the randomly generated UIDs.
 A valid UID must follow the rules below:
-
 It must contain at least  uppercase English alphabet characters.
 It must contain at least  digits ( - ).
 It should only contain alphanumeric characters ( - ,  -  &  - ).
