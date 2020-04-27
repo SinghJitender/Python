@@ -25,6 +25,7 @@ B1CDEF2354
 Sample Output
 Invalid
 Valid
+
 Explanation
 
 B1CD102354:  is repeating → Invalid
