@@ -27,6 +27,7 @@ Valid
 Explanation
 B1CD102354:  is repeating → Invalid
 B1CDEF2354: Valid
+
 '''
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
