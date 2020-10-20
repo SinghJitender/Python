@@ -47,5 +47,7 @@ if __name__ == '__main__':
     t.add(10)
     t.add(20)
     t.add(5)
+    t.add(2)
+    t.add(15)
     print(len(t))
     t.inOrderTraversal(t.root)
