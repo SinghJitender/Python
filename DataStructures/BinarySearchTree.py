@@ -30,6 +30,17 @@ class BST:
                     return
                 temp = temp.left_node
 
+    def search(self,data):
+        temp = self.root
+        while(temp!=None):
+            if temp.data==data:
+                return f"{data} Found"
+            if temp.data>=data:
+                temp = temp.left_node
+            else:
+                temp = temp.right_node
+        return f"{data} Not Found"
+
     def inOrderTraversal(self,node):
         temp = node
         if(temp!=None):
@@ -48,6 +59,17 @@ if __name__ == '__main__':
     t.add(20)
     t.add(5)
     t.add(2)
-    t.add(15)
-    print(len(t))
+    print("---------")
     t.inOrderTraversal(t.root)
+    print("---------")
+    print(t.search(15))
+    t.add(15)
+    print("---------")
+    t.inOrderTraversal(t.root)
+    print("---------")
+    print(t.search(15))
+    print("---------")
+    print(t.search(10))
+    print("---------")
+    print(f"No of nodes : {len(t)}")
+
