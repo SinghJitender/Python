@@ -41,6 +41,17 @@ class BST:
                 temp = temp.right_node
         return f"{data} Not Found"
 
+    def delete(self,data):
+        temp = self.root
+        while (temp != None):
+            if temp.data == data:
+                temp.data = -999
+            if temp.data >= data:
+                temp = temp.left_node
+            else:
+                temp = temp.right_node
+        return f"{data} Not Found"
+
     def inOrderTraversal(self,node):
         temp = node
         if(temp!=None):
