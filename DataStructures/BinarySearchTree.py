@@ -3,6 +3,7 @@ class Tree:
         self.right_node = None
         self.left_node = None
         self.data = data
+        self.parent = None
 
 class BST:
     def __init__(self):
@@ -20,12 +21,14 @@ class BST:
             if data>temp.data:
                 if temp.right_node == None:
                     node = Tree(data)
+                    node.parent = temp
                     temp.right_node = node
                     return
                 temp = temp.right_node
             else:
                 if temp.left_node == None:
                     node = Tree(data)
+                    node.parent = temp
                     temp.left_node = node
                     return
                 temp = temp.left_node
@@ -41,16 +44,20 @@ class BST:
                 temp = temp.right_node
         return f"{data} Not Found"
 
-    def delete(self,data):
-        temp = self.root
-        while (temp != None):
-            if temp.data == data:
-                temp.data = -999
-            if temp.data >= data:
-                temp = temp.left_node
+    def delete(self,data,node,parent):
+        if(self.root == None):
+            return
+        #Case When Node to be deleted is leaf node:
+        if(node.data==data and node.left_node == None and node.right_node == None):
+            if node.parent.data>data:
+                node.parent.right_node = None
+                del node
+                return
             else:
-                temp = temp.right_node
-        return f"{data} Not Found"
+                node.parent.left_node = None
+                del node
+                return
+
 
     def inOrderTraversal(self,node):
         temp = node
