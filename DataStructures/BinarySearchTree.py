@@ -81,7 +81,17 @@ class BST:
 
         #Case when both the nodes are not None
         if(node.data==data and node.left_node != None and node.right_node != None):
+            temp = node.left_node
+            while(temp.right_node!=None):
+                temp = temp.right_node
+            node.data = temp.data
+            del temp
+            return
 
+        if(data>node.data):
+            self.delete(data,node.right_node,node)
+        else:
+            self.delete(data,node.left_node,node)
 
 
     def inOrderTraversal(self,node):
