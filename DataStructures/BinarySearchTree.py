@@ -57,6 +57,31 @@ class BST:
                 node.parent.left_node = None
                 del node
                 return
+        #Case when left node is not None and right node is none of the node to be deleted
+        if(node.data==data and node.left_node != None and node.right_node == None):
+            if node.parent.data > data:
+                node.parent.right_node = node.left_node
+                del node
+                return
+            else:
+                node.parent.left_node = node.left_node
+                del node
+                return
+
+        #Case when left node is None and right node is not none of the node to be deleted
+        if(node.data==data and node.left_node == None and node.right_node != None):
+            if node.parent.data > data:
+                node.parent.right_node = node.right_node
+                del node
+                return
+            else:
+                node.parent.left_node = node.right_node
+                del node
+                return
+
+        #Case when both the nodes are not None
+        if(node.data==data and node.left_node != None and node.right_node != None):
+
 
 
     def inOrderTraversal(self,node):
