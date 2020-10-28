@@ -125,4 +125,5 @@ if __name__ == '__main__':
     print(t.search(10))
     print("---------")
     print(f"No of nodes : {len(t)}")
+    print("---------")
 
